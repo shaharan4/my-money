@@ -6,7 +6,7 @@ import Navbar from "./components/navbar";
 import HomeScreen from "./components/home-screen.js";
 import EditUserScreen from "./components/edit-user-screen.js";
 import CreateUserScreen from "./components/create-user-screen.js";
-import EditPortfolioScreen from "./components/edit-portfolio-screen.js";
+import PortfolioScreen from "./components/portfolio-screen.js";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/" element={<HomeScreen></HomeScreen>} />
           <Route path="/edit_user" element={<EditUserScreen></EditUserScreen>} />
           <Route path="/create_user" element={<CreateUserScreen></CreateUserScreen>} />
-          <Route path="/edit_portfolio" element={<EditPortfolioScreen></EditPortfolioScreen>} />
+          <Route path="/portfolio" element={<PortfolioScreen></PortfolioScreen>} />
         </Routes>
       </div>
     </Router>

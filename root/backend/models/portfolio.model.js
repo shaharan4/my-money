@@ -4,7 +4,9 @@ const Schema = mongoose.Schema;
 
 const portfolioSchema = new Schema({
     username: { type: String, required: true },
-    cash: { type: Number, required: true },
+    cash: { type: Number, required: true, default: 0 },
+    stocks: [{ stockName: String, stockTicker: String, shares: Number}],
+    cryptos: [{ cryptoName: String, cryptoTicker: String, coins: Number}]
 
 },  {
     timestamps: true,
