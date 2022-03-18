@@ -1,17 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./App.css";
 
-import Navbar from "./components/navbar";
-import HomeScreen from "./components/home-screen.js";
-import EditUserScreen from "./components/edit-user-screen.js";
-import CreateUserScreen from "./components/create-user-screen.js";
-import PortfolioScreen from "./components/portfolio-screen.js";
+import Navbar from "./components/Navbar";
+import HomeScreen from "./components/HomeScreen";
+import EditUserScreen from "./components/EditUserScreen";
+import CreateUserScreen from "./components/CreateUserScreen";
+import PortfolioScreen from "./components/PortfolioScreen";
 
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className="app_container">
         <Navbar></Navbar>
         <br></br>
         <Routes>

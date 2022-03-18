@@ -1,4 +1,5 @@
 import React,  { Component } from 'react';
+import "../css/PortfolioScreen.css";
 
 export default class PortfolioScreen extends Component {
 
@@ -7,9 +8,12 @@ export default class PortfolioScreen extends Component {
         this.state = {
             username: '',
             cash: '',
+            stocks: [],
+            cryptos: []
             
-
         }
+        
+
     }
 
     render(){
